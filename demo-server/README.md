@@ -8,3 +8,12 @@ npm run build-all # Iterates through all demos and builds them.
 npm start
 ```
 
+
+2024/01/28 funkjk
+ADD mongodb to persistence
+
+
+```sh
+cd mongodb
+docker compose up -d
+```

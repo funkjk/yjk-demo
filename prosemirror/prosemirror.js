@@ -11,8 +11,11 @@ import { keymap } from 'prosemirror-keymap'
 
 window.addEventListener('load', () => {
   const ydoc = new Y.Doc()
+  const searchParams = new URLSearchParams(window.location.search)
+  // const hostName = 'ws://localhost:3000/ws'
+  const hostName = searchParams.has("host") ? searchParams.get("host") : 'wss://demos.yjs.dev/ws'
   const provider = new WebsocketProvider(
-    'wss://demos.yjs.dev/ws', // use the public ws server
+    hostName, // use the public ws server
     // `ws${location.protocol.slice(4)}//${location.host}/ws`, // alternatively: use the local ws server (run `npm start` in root directory)
     'prosemirror-demo',
     ydoc
