@@ -35,3 +35,9 @@ your own endpoint.
 ### (Un)License
 
 The demos are released to the public domain - [Unlicense](./LICENSE).
+
+
+### update
+
+- Add mongodb persistance
+- Add 'host' query parameter to use other ws server
