@@ -35,10 +35,9 @@
   </v-layout>
 </template>
   <script>
-
 import useMyEditorStore from "@/store/MyEditor";
+import useMyEditorStore2 from "@/store/MyEditor2";
 export default {
-  inject: ["ymap"],
   setup() {
     const editorStore = useMyEditorStore();
     const { set, setAll } = editorStore;
@@ -47,17 +46,19 @@ export default {
   },
   computed: {
     data() {
-        return useMyEditorStore().data
+      const editorStore2 = useMyEditorStore2();
+      console.log(editorStore2.data);
+
+      return useMyEditorStore().data;
     },
   },
 
   data: () => {
-
     return {};
   },
   methods: {
     changeValue(key, value) {
-      this.ymap.set(key, value);
+      this.set(key, value);
     },
   },
 };

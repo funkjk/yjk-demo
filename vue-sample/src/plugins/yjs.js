@@ -26,8 +26,6 @@ export default {
     
     ydoc.on("update", (update, origin, doc, tr) => {
       if (update || origin || doc || tr) {
-        // console.log(`${update},${origin},${tr}`)
-        console.log("map", doc.get("map").toJSON());
         // this.ydata = doc.get("map").toJSON();
         setAll(doc.get("map").toJSON())
       }
