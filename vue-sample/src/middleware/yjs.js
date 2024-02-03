@@ -4,6 +4,9 @@ import { WebsocketProvider } from "y-websocket";
 
 
 const ydoc = new Y.Doc();
+ydoc.on('update',(changedData)=> {
+     console.log("ydoc update:", Y.decodeUpdate(changedData))
+})
 const searchParams = new URLSearchParams(window.location.search);
 const hostName = searchParams.has("host")
   ? searchParams.get("host")
