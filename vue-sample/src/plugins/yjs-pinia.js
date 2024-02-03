@@ -13,6 +13,8 @@ export default function (context) {
   const ymap = ydoc.getMap(context.store.$id);
   context.store.$onAction(({ after, args, name }) => {
     after(() => {
+      // this aproach makes change data huge
+      // this is better to send only change(like SimpleText.vue)
       ymap.set(DATA_KEY, context.store.$state)
     })
   })
