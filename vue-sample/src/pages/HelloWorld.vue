@@ -1,5 +1,20 @@
 <template>
   <v-container>
+    
+    <v-row class="text-center">
+      <v-col cols="12">
+      YJS Vue Sample
+      <div>
+        <li>
+          <a href="/simple"> Simple Text Sample</a>
+        </li>
+        <li>
+          <a href="/editor"> Editor</a>
+        </li>
+      </div>
+      </v-col>
+    </v-row>
+    <v-divider class="my-16"></v-divider>
     <v-row class="text-center">
       <v-col cols="12">
         <v-img

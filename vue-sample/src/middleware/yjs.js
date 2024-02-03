@@ -19,3 +19,19 @@ export default {
   provider,
   awareness
 }
+
+
+// const delta = dmp.diff_toDelta(diff)
+//console.log(delta)
+// let pos =0
+// let delta = []
+// for (let d of diff) {
+//   console.log(d)
+//   pos += d[1].length
+//   // [{ insert: 'a' }, { insert: 'bc', attributes: { bold: true }}]
+//   if (d[0] !== DiffMatchPatch.DIFF_INSERT)  {
+//     delta.push({insert:d[1]})
+//   }
+// }
+
+// console.log(delta)

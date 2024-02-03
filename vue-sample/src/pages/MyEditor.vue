@@ -94,8 +94,8 @@
   <script>
 import useMyEditorStore from "@/store/MyEditor";
 import useAwarenessStateStore from "@/store/AwarenessState";
-import MyGrid from "./MyGrid.vue";
-import Awareness from "./Awareness.vue";
+import MyGrid from "../components/MyGrid.vue";
+import Awareness from "../components/Awareness.vue";
 export default {
   components: { MyGrid, Awareness },
   setup() {
